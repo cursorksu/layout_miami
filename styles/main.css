@@ -20,6 +20,14 @@ li {
 p {
   margin: 0; }
 
+a,
+button {
+  cursor: pointer; }
+
+:focus,
+:active {
+  outline: none; }
+
 .logo {
   display: block;
   width: 75px;
@@ -54,6 +62,20 @@ p {
     margin-bottom: 8px; }
   .contact__info {
     padding-bottom: 8px; }
+    @media (min-width: 400px) {
+      .contact__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center; } }
     @media (min-width: 768px) {
       .contact__info {
         display: -webkit-box;
@@ -66,7 +88,8 @@ p {
                 justify-content: flex-start;
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start; } }
+                align-items: flex-start;
+        text-align: left; } }
   @media (min-width: 768px) {
     .contact__block {
       margin-right: 56px;
@@ -241,6 +264,10 @@ p {
   line-height: 48px;
   margin-bottom: 16px;
   outline: none; }
+  .contact__field:focus, .contact__field:active {
+    outline: none;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .contact__field--last {
     margin-bottom: 32px; }
   @media (min-width: 768px) {
@@ -458,6 +485,10 @@ p {
     background: #fff;
     border: 2px solid #0075ff;
     color: #0075ff; }
+  .btn:focus, .btn:active {
+    outline: none;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46); }
   .btn--transparent {
     background: #fff;
     border: 2px solid #0075ff;
@@ -471,6 +502,9 @@ p {
         display: block;
         width: 188px;
         margin: auto; } }
+
+html {
+  scroll-behavior: smooth; }
 
 .body {
   font-family: "Roboto", sans-serif;
