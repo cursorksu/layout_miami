@@ -19,7 +19,7 @@ button {
   cursor: pointer; }
 
 :focus,
-:active {
+:hover {
   outline: none; }
 
 /*# sourceMappingURL=reset.css.map */
